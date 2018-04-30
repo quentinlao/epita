@@ -1,0 +1,162 @@
+﻿<html>
+<head>
+ <meta charset="utf-8" />
+ <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+ <link rel="stylesheet" media="screen" type="text/css" title="design 1.0" href="style.css" />
+  <link rel="shortcut icon" type="image" href="images/favicon.png" /> 
+ 
+ <script>
+   
+   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+
+</script>
+  </head>
+
+<body>
+
+<div id="header">
+	<div class="container">
+			<img src="images/quadrunity.png" />
+			<ul>
+			<li><a href="#slide1" class="active" title="Next Section" >Accueil</a></li>
+			<li><a href="#slide2" title="Next Section">Présentation</a></li>
+			<li><a href="#slide3" title="Next Section">Gameplay</a></li>
+			<li><a href="#slide4" title="Next Section">Progression</a></li>
+			<li><a href="#slide5" title="Next Section">Equipe</a></li>
+			<li><a href="#slide6" title="Next Section">Crédits</a></li>
+			</ul>
+	</div>
+	</div>
+
+	<!-- SECTION-->
+	<div id="slide1">
+	<div class="container">
+		<h1></h1>
+		<h2>Dead Escape</h2><hr/>
+		<p>
+			<i>Inspiré par la popularité des jeux d’horreur tels que Slender (qui fut lui-même un jeu indépendant crée sous Unity) ou Outlast, nous avons décidé de reprendre les éléments caractéristiques de ce genre, tout en apportant des concepts nouveaux tel que l'exploitation d’un labyrinthe.<br></i>
+
+						
+		</p>
+		<center><img src="images/youtube.png" /></center>
+		</div>
+	</div>
+	
+	<!-- PRESENTATION-->
+	<div id="slide2">
+		<div class="container">
+			<h1></h1>
+		<h2>Présentation</h2><hr/>
+				
+					<p>Le joueur incarne un journaliste enquêtant sur un lieu recensant de nombreuses disparitions. Après avoir pénétré l’enceinte du lieu mystique, ce dernier perd connaissance et se réveille dans un mystérieux labyrinthe. Mais il se rend compte qu’il n’est pas seul…<br>
+
+</p>
+			
+				
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div id="slide3">
+		<div class="container">
+				<h1></h1>
+		<h2>Gameplay</h2><hr/>
+			<p>Le joueur dispose seulement d’une lampe torche (qu’il devra recharger). Le jeu se déroulera à la première personne, avec la possibilité de marcher et de courir. 
+Le HUD (Head-up display) sera composé de la carte du labyrinthe, la batterie de la lampe torche, ainsi que la fréquence cardiaque du protagoniste qui s'accélère en cas de danger. Le joueur sera poursuivi par une créature, dont nous coderons l’IA (Intelligence Artificiel).<br>
+<br>
+</p></div>
+				
+		</div>
+	</div>
+	<div class="clear"></div>
+
+	<div id="slide4">
+		<div class="container">
+			<h1></h1>
+		<h2>Progression</h2><hr/>
+		Site <div class="progress-bar blue"></div>
+		Jeu <div class="progresss-bar red"></div>
+			
+				
+			1)portes et escaliers<br>
+			2)courir, lampe torche, porte avec texture<br>
+			3)textures, rythme cardiaque<br>
+			4)animation Portes, brouillard, fichier exe			<br>
+				
+			
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div id="slide5">
+		<div class="container">
+			<h1></h1>
+		<h2>Equipe</h2><hr/>
+			<p>Notre groupe s’est formé car nous avions des affinités ainsi que des intérêts communs. Nous avons choisi ce nom du fait de notre unicité, et par inspiration du logiciel qui nous est essentiel pour la réalisation du jeu.</p>
+			<div class="box">
+					
+					<h7>Lorem ipsum</h7>
+					<p>Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.</p>
+				</div>
+				<div class="box">
+					
+					<h7>Lorem ipsum</h7>
+					<p>Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.</p>
+				</div>
+				<div class="box">
+					
+					<h7>Lorem ipsum </h7>
+					<p>Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum. </p>
+				</div>
+				<div class="box">
+					
+					<h7>Lorem ipsum </h7>
+					<p> Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.</p>
+				</div>
+		</div>
+	</div>
+
+	<div class="clear"></div>
+	<div id="slide6">
+		<div class="container">
+			<h1></h1>
+		<h2>Crédits</h2><hr/>
+			
+			Sources audio : Outlast <br>
+			Sources cinématiques : Antoine Z. <br>
+			Sources textures & photographie : http://mikedeere.com/portfolio/projects/sense-of-place/<br>
+
+						
+<div class="clear"></div>		<hr><center>Copyright :3</center>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<!-- <script type="text/javascript" src="js/scripts.min.js"></script> -->
+</body>
+</html>

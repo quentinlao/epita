@@ -1,0 +1,32 @@
+body{
+	background:black;
+	margin:0;
+	font-family: 'Alegreya Sans';
+	font-size:16px;
+	color:#303030;
+}
+#images
+{
+	margin: 0;
+	background:url(images/welcome2.png) no-repeat;
+	height: 999px;
+	width: 1480px;
+}
+#images p
+{
+	font-family: 'Arial'; 
+	font-size:30px;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding-top: 900px;
+}
+#images a
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+#images a:hover
+
+{
+	color: grey;
+}
